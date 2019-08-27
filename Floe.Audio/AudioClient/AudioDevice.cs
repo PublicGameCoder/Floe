@@ -80,7 +80,7 @@ namespace Floe.Audio
 						}
 						break;
 					case DataFlow.Capture:
-						DefaultOutputDevice = GetDefaultDevice(DataFlow.Capture);
+						DefaultInputDevice = GetDefaultDevice(DataFlow.Capture);
 						handler = DefaultInputDeviceChanged;
 						if(handler != null)
 						{
